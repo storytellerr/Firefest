@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot snapshot) {
                 for (DataSnapshot postSnapshot : snapshot.getChildren()) {
                     //Getting the data from snapshot
+                    
                     Log.v("warning","hello4");
                     Person person = postSnapshot.getValue(Person.class);
                     //Adding it to a string
